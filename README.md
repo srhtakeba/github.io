@@ -88,11 +88,11 @@ Then type the following command to commit the changes to your **local repository
 
 The quotation following `-m` is the commit message, which gives a description of what changes were made in that commit. 
 
-Once our changes are committed, let's push them to your Github repo. 
+Once the changes are committed, let's push them to your Github repo. 
 
 `$ git push -u origin`
 
-You should now see the changes on your github repo. 
+You should now see the changes on your Github repo. 
 
 You can use those three commands to save your work throughout your coding process. 
 
@@ -187,7 +187,7 @@ To use icons in your HTML, add the following code before `</head>`:
 
 Then, check out this [list of FontAwesome icons](https://fontawesome.com/icons?d=gallery). Take note of the names of icons you want to use.
 
-To use an icon, add an `<i></i>` tag with the following classnames:
+To use an icon, add an `<i></i>` tag with the following class names:
 
 ```<i class="fas fa-[ICON NAME]></i>```
 
