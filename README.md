@@ -132,7 +132,7 @@ Trying to figure out Bootstrap? Here are some important pages in the documentati
 - **[Copy and Paste Components](https://getbootstrap.com/docs/4.1/components/)**
 - **[Bootstrap Demos](https://getbootstrap.com/docs/4.1/examples/)**
 
-## Advanced Bootstrap 
+## Advanced Bootstrap Utilities
 
 ### Responsive Breakpoints
 **Breakpoints** are common device widths at which we should change our layout to optimize readability and usability. For example, while a set of links can span horizontally across a laptop screen, those links should stack vertically on a phone. Otherwise some text could get cut off. 
@@ -173,6 +173,9 @@ You can change styling at every breakpoint, if you want. For example:
 
 In this example, extra small screens will have left-aligned text, small screens will have center-aligned text, medium screens will have right-aligned text, and extra large screens will have right-aligned text. 
 
+### Grid 
+
+### Flex
 
 ## FontAwesome ##
 
@@ -214,5 +217,29 @@ And if you want to add only specific weights:
 Each font will have different weights, or sometimes, only one weight. Check which weights are available for your chosen font
 
 ## Wrap-Up 
-Now let's push your finished website to your personal Github page. 
+Feel free to delete the starter files. Make sure your final `index.html` is at the root of your directory. 
+
+Now let's push your finished website to your personal Github page.
+
+Create a **NEW** Github repository.  **DO NOT INITIALIZE THE REPO WITH A README** Give it a name in the following format:
+
+``[YOUR GITHUB USERNAME].github.io``
+
+For example: ``username.github.io``
+
+In your terminal, type the following command:
+
+``git remote add website https://github.com/[YOUR GITHUB USERNAME]/[YOUR GITHUB USERNAME].github.io``
+
+...where ``website`` is the name of your new remote repository. 
+
+Check that your new remote repository exists:
+
+``git remote -v``
+
+Finally, push your finished website to Github pages:
+
+`git push website master`
+
+That's it! Check out ``[YOUR GITHUB USERNAME].github.io`` for your published website! It might take some time to show up, but it should be there within an hour or so. 
 
