@@ -51,7 +51,7 @@ You should now have this repo on your machine!
 ### Edit some HTML
 In your editor, open the `hack_day_2019/bare_bones` folder. Then, using the terminal, type the following command: 
 
-`cd hack_day_2019/bare_bones`
+`$ cd hack_day_2019/bare_bones`
 
 The `cd` command allows you to navigate the directories in your file system. You can now execute other commands from the `bare_bones` folder. 
 
@@ -120,7 +120,7 @@ Don't forget to commit your changes!
 ## Bootstrap 
 Open the `hack_day_2019/bootstrap` folder and open `index.html`. Type the following command into terminal:
 
-`cd ../boostrap`
+`$ cd ../boostrap`
 
 The `..` allows you to move up to the immediate parent directory of `bare_bones` (in this case, `hack_day_2019`). You can now execute commands from the `boostrap` directory. 
 
