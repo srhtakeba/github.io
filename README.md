@@ -48,7 +48,7 @@ and press enter...
 You should now have this repo on your machine!
 
 ## Bare Bones HTML 
-
+### Edit some HTML
 Using the terminal, enter the first folder using the following command: 
 
 `cd hack_day_2019/bare_bones`
@@ -75,7 +75,9 @@ with
 
 You can also add a description to your site on line 8, in the `content` attribute.  
 
-Save these changes. Now let's commit them to Git and Github. 
+Save these changes. 
+
+### Commit Changes to Git and Github
 
 To stage your changes to be committed, type:
 
