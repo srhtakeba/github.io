@@ -6,11 +6,10 @@ Ever wanted to build your own website? With NUWIT, you'll learn how—and more!
 ### Wireframing
 - **[Figma](https://www.figma.com/)**: A wireframing application that can help you plan out your website! 
 ### Code Editors
-Here are some great **open source** code editors that are compatible with Windows, Mac, and Linux:
-- **[Visual Studio Code](https://code.visualstudio.com/download)**: Microsoft's code editor with a super sleek user interface and terminal integration. 
-- **[Atom](https://atom.io/)**: Github's code editor, also with a sleek UI and terminal integration! 
+Here is a great **open source** code editor that is compatible with Windows, Mac, and Linux:
+- **[Visual Studio Code](https://code.visualstudio.com/download)**: Microsoft's code editor with a super sleek user interface and terminal integration.  
 
-There are lots of other code editors out there if you'd prefer something different, but these two are highly recommended and completely free!
+There are lots of other code editors out there if you'd prefer something different, but this is the code editor we'll be using during our demos. 
 
 ### Installing Git
 Git is a **version control** system. It, like our code editors, is open source. Essentially, git allows us to make changes to code, revert code to a past version, and add features to code without necessarily having those features part of our final product.
