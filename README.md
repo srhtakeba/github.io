@@ -171,7 +171,7 @@ You can change styling at every breakpoint, if you want. For example:
 
 ``text-left text-sm-center text-md-right text-lg-justify text-xl-right``
 
-In this example, extra small screens will have left-aligned text, small screens will have center-aligned text, medium screens will have right-aligned text, and extra large screens will have right-aligned text. 
+In this example, extra small screens will have left-aligned text, small screens will have center-aligned text, medium screens will have right-aligned text, large screens will have justified text, and extra large screens will have right-aligned text. 
 
 ### Grid 
 
@@ -221,7 +221,7 @@ Feel free to delete the starter files. Make sure your final `index.html` is at t
 
 Now let's push your finished website to your personal Github page.
 
-Create a **NEW** Github repository.  **DO NOT INITIALIZE THE REPO WITH A README** Give it a name in the following format:
+Create a **NEW** Github repository.  **DO NOT INITIALIZE THE REPO WITH A README** and make sure to give it a name in the following format:
 
 ``[YOUR GITHUB USERNAME].github.io``
 
