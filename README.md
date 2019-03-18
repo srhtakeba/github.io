@@ -49,15 +49,15 @@ You should now have this repo on your machine!
 
 ## Bare Bones HTML 
 ### Edit some HTML
-Using the terminal, enter the first folder using the following command: 
+In your editor, open the `hack_day_2019/bare_bones` folder. Then, using the terminal, type the following command: 
 
 `cd hack_day_2019/bare_bones`
 
-This will bring you into the first folder in this repo. 
+The `cd` command allows you to navigate the directories in your file system. You can now execute other commands from the `bare_bones` folder. 
 
 You'll notice that there are two files in this folder: `index.html` and `style.css`
 
-On line 7, replace:
+On line of `7` of index.html, replace:
 
 ``` <title>My Website</title>```
 
@@ -65,7 +65,7 @@ with
 
 ```<title>[YOUR NAME HERE]</title>```
  
-And on line 9, replace:
+And on line `9`, replace:
 
 ``` <meta name="author" content="Your Name">```
 
@@ -95,7 +95,123 @@ Once our changes are committed, let's push them to your Github repo.
 
 You should now see the changes on your github repo. 
 
-You can use those three commands throughout your coding process to save your work. 
+You can use those three commands to save your work throughout your coding process. 
+
+### HTML Tags and Attributes
+Here, we're going to give you an overview of HTML and show you some demos. But in case you need resources, we've listed quite a few below: 
+
+- **[HTML Overview](https://www.w3schools.com/html/html_intro.asp)**
+- **🌟[Cheat Sheet](http://www.simplehtmlguide.com/cheatsheet.php)🌟**
+- **[In Depth Tutorial](http://www.tutorialspoint.com/html/html_quick_guide.htm)**
+
+### CSS
+Once again, CSS will require a bit of in-person explanation. But here are resources just in case:
+
+- **[CSS Syntax Intro](https://www.w3schools.com/css/css_syntax.asp)**
+- **🌟[Cheat Sheet](https://www.toptal.com/css/css-cheat-sheet)🌟**
+
+### CSS & HTML - Put it all together!
+Getting a bit lost putting it all together? Here's some example code!
+
+- **[Topbar Reference](https://www.w3schools.com/css/css_navbar.asp)**
+
+Don't forget to commit your changes!
+
+## Bootstrap 
+Open the `hack_day_2019/bootstrap` folder and open `index.html`. Type the following command into terminal:
+
+`cd ../boostrap`
+
+The `..` allows you to move up to the immediate parent directory of `bare_bones` (in this case, `hack_day_2019`). You can now execute commands from the `boostrap` directory. 
+
+Your `index.html` is already set up with Bootstrap installed. 
+
+Trying to figure out Bootstrap? Here are some important pages in the documentation: 
+- **[Layout](https://getbootstrap.com/docs/4.1/layout/overview/)**
+- **[How Bootstrap Formats HTML tags](https://getbootstrap.com/docs/4.1/content/reboot/)**
+- **[Copy and Paste Components](https://getbootstrap.com/docs/4.1/components/)**
+- **[Bootstrap Demos](https://getbootstrap.com/docs/4.1/examples/)**
+
+## Advanced Bootstrap 
+
+### Responsive Breakpoints
+**Breakpoints** are common device widths at which we should change our layout to optimize readability and usability. For example, while a set of links can span horizontally across a laptop screen, those links should stack vertically on a phone. Otherwise some text could get cut off. 
+
+Here are Bootstrap's breakpoints. 
+```
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// sm - Small devices (landscape phones, 576px and up)  
+@media (min-width: 576px) { ... }
+
+// md - Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// lg - Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// xl - Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+```
+
+You can set certain (but not all) Bootstrap utilities to activate at certain breakpoints. To do this, use the following syntax in your class names:
+
+```[Bootstrap attribute]-[breakpoint abbreviation]-[Bootstrap value]```
+
+For example:
+
+```text-left text-md-center```
+
+Using the above class names, your text will be left-aligned on all screens with widths smaller than 768px, but centered on all screens above that. 
+
+Your default styling, aka the styling that applies to extra small (xs) screens, should have no breakpoint. In this case `text-left`. For greater screen sizes that require different styling, add the appropriate breakpoints. The styling you provide for a breakpoint will apply for all screen sizes greater than that breakpoint — until/unless it reaches a greater breakpoint where you've different styling. 
+
+You can change styling at every breakpoint, if you want. For example:
+
+``text-left text-sm-center text-md-right text-lg-justify text-xl-right``
+
+In this example, extra small screens will have left-aligned text, small screens will have center-aligned text, medium screens will have right-aligned text, and extra large screens will have right-aligned text. 
+
+
+## FontAwesome ##
+
+Want fun icons like these on your website? 
+![Font Awesome Icons](https://i0.wp.com/blogs.innovationm.com/wp-content/uploads/2017/10/fontawesome-text-icons-0041-jpg.jpeg?w=625)
+
+To use icons in your HTML, add the following code before `</head>`:
+
+```<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">```
+
+Then, check out this [list of FontAwesome icons](https://fontawesome.com/icons?d=gallery). Take note of the names of icons you want to use.
+
+To use an icon, add an `<i></i>` tag with the following classnames:
+
+```<i class="fas fa-[ICON NAME]></i>```
+
+To insert a star, for example:
+
+```<i class="fas fa-star></i>```
+
+## Google Fonts
+
+Tired of boring web safe fonts like Helvetica and Times New Roman? Well, you're in luck! Google Fonts has a wide selection of fonts that you can embed on your webpage. 
+
+- **[Google Font List](https://fonts.google.com/)**
+
+Once you pick a font, take note of its name. Then add the following code before `</head>`:
+
+```<link href="https://fonts.googleapis.com/css?family=[FONT NAME]" rel="stylesheet">```
+
+For example, 
+
+```<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">```
+
+And if you want to add only specific weights:
+
+```<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">```
+
+Each font will have different weights, or sometimes, only one weight. Check which weights are available for your chosen font
 
 ## Wrap-Up 
 Now let's push your finished website to your personal Github page. 
