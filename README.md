@@ -41,7 +41,7 @@ Open your terminal in your code editor:
 
 **Type** the following command into your terminal, **pasting** the git clone url you just copied:
 
-```git clone [COPIED GIT CLONE URL]```
+```$ git clone [COPIED GIT CLONE URL]```
 
 and press enter...
 
@@ -81,17 +81,17 @@ Save these changes.
 
 To stage your changes to be committed, type:
 
-`git add .`
+`$ git add .`
 
 Then type the following command to commit the changes to your **local repository**. Your local repository is the git repository that is tracking the changes on your laptop only. Your **remote repository** is your Github repository, the one that saves all your changes online.
 
-`git commit -m "Add my name"`
+`$ git commit -m "Add my name"`
 
 The quotation following `-m` is the commit message, which gives a description of what changes were made in that commit. 
 
 Once our changes are committed, let's push them to your Github repo. 
 
-`git push -u origin`
+`$ git push -u origin`
 
 You should now see the changes on your github repo. 
 
@@ -229,17 +229,17 @@ For example: ``username.github.io``
 
 In your terminal, type the following command:
 
-``git remote add website https://github.com/[YOUR GITHUB USERNAME]/[YOUR GITHUB USERNAME].github.io``
+``$ git remote add website https://github.com/[YOUR GITHUB USERNAME]/[YOUR GITHUB USERNAME].github.io``
 
 ...where ``website`` is the name of your new remote repository. 
 
 Check that your new remote repository exists:
 
-``git remote -v``
+``$ git remote -v``
 
 Finally, push your finished website to Github pages:
 
-`git push website master`
+`$ git push website master`
 
 That's it! Check out ``[YOUR GITHUB USERNAME].github.io`` for your published website! It might take some time to show up, but it should be there within an hour or so. 
 
