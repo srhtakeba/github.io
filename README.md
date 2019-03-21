@@ -310,11 +310,11 @@ The Bootstrap grid allows you to build website layouts using—you guessed it—
 
 ![The grid system, which contains columns labeled with numbers](/../screenshots/screenshots/gridsystem.png)
 
-`col` is the column css class. Notice the numbers attached to `col`, like `col-4`? They're pretty important. That's the column width. It's not a width in pixels. Rather, it's the proportion of the parent element it's inside. How does that work? Keep reading.
+`col` is the column css class. Notice the numbers attached to `col`, like `col-4`? They're pretty important. That's the column width. It's not a width in pixels. Rather, it's the proportion of the parent element it's inside. How does that work? 
 
 The absolute key to the grid system is this: **the column widths must add up to twelve**. If they're more than twelve, they probably won't work. If they're less than twelve, they probably won't work too. Twelve is the golden number in the Bootstrap grid system. 
 
-So how does this relate to proportions? Well, think of the column widths as a fraction over twelve. 6 is half of 12, so a column of `col-6` will take up half its parent container. `col-4` is a third of twelve, so it takes up a third of the parent container, and so on. 
+So how does this relate to proportions? Well, think of the column widths as a fraction over twelve. 6 is half of 12, so a column of `col-6` will take up half its parent container. `col-4` is a third of twelve, so it takes up a third of the parent container, and so on. No matter how big or small the parent container gets, `col-6` will always take up half of the container's width. 
 
 Notice that some columns have breakpoints. Columns are one of those special utilities that you can set to activate at certain responsive breakpoints. 
 
@@ -325,6 +325,8 @@ For example, you could want a menu to take up the full width of a phone screen, 
 But once you hit medium screens, a full screen menu could seem too large. So you give your menu another class: `col-md-6`. Now, for medium-sized screens, your menu takes up only half the screen. 
 
 ![full screen menu](/../screenshots/screenshots/grid2.png)
+
+The grid system is super useful when developing responsive websites. 
          
 <a name="flex"></a>
 ### Flex
