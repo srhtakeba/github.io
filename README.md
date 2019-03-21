@@ -296,7 +296,7 @@ For example:
 
 Using the above class names, your text will be left-aligned on all screens with widths smaller than 768px, but centered on all screens above that. 
 
-Your default styling, aka the styling that applies to extra small (xs) screens, should have no breakpoint. In this case `text-left`. For greater screen sizes that require different styling, add the appropriate breakpoints. The styling you provide for a breakpoint will apply for all screen sizes greater than that breakpoint — until/unless it reaches a greater breakpoint where you've different styling. 
+Your default styling, aka the styling that applies to extra small (xs) screens, should have no breakpoint. In this case `text-left`. For greater screen sizes that require different styling, add the appropriate breakpoints. The styling you provide for a breakpoint will apply for all screen sizes greater than that breakpoint — until/unless it reaches a greater breakpoint where you've applied different styling. 
 
 You can change styling at every breakpoint, if you want. For example:
 
