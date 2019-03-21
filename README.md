@@ -7,7 +7,6 @@ Ever wanted to build your own website? With NUWIT, you'll learn how—and more!
   - [ Code Editors](#code-editors)
   - [ Installing Git](#installing-git)
   - [ Using Git and Github](#using-git)
-  
 - [Bare Bones HTML](#bare-bones)
   - [ Edit HTML](#edit-html)
   - [ Commit Changes to Git and Github](#commit-changes)
@@ -15,7 +14,6 @@ Ever wanted to build your own website? With NUWIT, you'll learn how—and more!
   - [ CSS](#css)
   - [ CSS and HTML Together](#css-html)
   - [ Developer Tools](#developer-tools)
-  
 - [ Bootstrap ](#bootstrap)
 - [ Advanced Bootstrap ](#advanced-bootstrap)
   - [Responsive Breakpoints](#responsive-break)
@@ -220,6 +218,26 @@ You can change styling at every breakpoint, if you want. For example:
 In this example, extra small screens will have left-aligned text, small screens will have center-aligned text, medium screens will have right-aligned text, large screens will have justified text, and extra large screens will have right-aligned text. 
 <a name="grid"></a>
 ### Grid 
+
+The Bootstrap grid allows you to build website layouts using—you guessed it—a grid system. This grid system relies on rows and columns, nested within a div of the `container` css class. 
+
+![The grid system, which contains columns labeled with numbers](/../screenshots/screenshots/gridsystem.png)
+
+`col` is the column css class. Notice the numbers attached to `col`, like `col-4`? They're pretty important. That's the column width. It's not a width in pixels. Rather, it's the proportion of the parent element it's inside. How does that work? Keep reading.
+
+The absolute key to the grid system is this: **the column widths must add up to twelve**. If they're more than twelve, they probably won't work. If they're less than twelve, they probably won't work too. Twelve is the golden number in the Bootstrap grid system. 
+
+So how does this relate to proportions? Well, think of the column widths as a fraction over twelve. 6 is half of 12, so a column of `col-6` will take up half its parent container. `col-4` is a third of twelve, so it takes up a third of the parent container, and so on. 
+
+Notice that some columns have breakpoints. Columns are one of those special utilities that you can set to activate at certain responsive breakpoints. 
+
+For example, you could want a menu to take up the full width of a phone screen, otherwise it'd be too small to fit your text. So your menu is given `col-12` for extra small screens up to your next breakpoint, the default. 
+
+![full screen menu](/../screenshots/screenshots/grid1.png)
+
+But once you hit medium screens, a full screen menu could seem too large. So you give your menu another class: `col-md-6`. Now, for medium-sized screens, your menu takes up only half the screen. 
+
+![full screen menu](/../screenshots/screenshots/grid2.png)
          
 <a name="flex"></a>
 ### Flex
