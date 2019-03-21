@@ -25,9 +25,7 @@ Git is a **version control** system. It, like our code editors, is open source. 
 Fork this repository using the link below the topbar:
 ![How to fork a repository](https://help.github.com/assets/images/help/repository/fork_button.jpg)
 
-
-
-**Copy** your new repo's cloning url:
+**Copy** your new repo's clone url:
 
 ![Clone button](https://help.github.com/assets/images/help/repository/clone-repo-clone-url-button.png)
 
@@ -48,15 +46,11 @@ You should now have this repo on your machine!
 
 ## Bare Bones HTML 
 ### Edit some HTML
-In your editor, open the `hack_day_2019/bare_bones` folder. Then, using the terminal, type the following command: 
-
-`$ cd hack_day_2019/bare_bones`
-
-The `cd` command allows you to navigate the directories in your file system. You can now execute other commands from the `bare_bones` folder. 
+In your editor, open the `hack_day_2019/bare_bones` folder. 
 
 You'll notice that there are two files in this folder: `index.html` and `style.css`
 
-On line of `7` of index.html, replace:
+On line of 7 of index.html, replace:
 
 ``` <title>My Website</title>```
 
@@ -64,7 +58,7 @@ with
 
 ```<title>[YOUR NAME HERE]</title>```
  
-And on line `9`, replace:
+And on line 9, replace:
 
 ``` <meta name="author" content="Your Name">```
 
@@ -116,12 +110,25 @@ Getting a bit lost putting it all together? Here's some example code!
 
 Don't forget to commit your changes!
 
+### Developer Tools
+
+Sometimes figuring out the correct CSS is a lot of trial and error. There are a lot of different CSS attributes, and it's hard to memorize them all, let alone everything they do. Google Chrome's Developer Tools can help you.
+
+Developer Tools allows you to see immediate changes to a website as you toggle CSS attributes and edit HTML. Note that these changes won't actually be made to your code — they'll just temporarily manipulate the website as it appears in your browser. But it's still a good way to experiment and identify problems in your HTML or CSS. 
+
+You can open the Developer Tools by right clicking on some component of a website and selecting "Inspect: 
+![Open Developer Tools with right click](https://developers.google.com/web/tools/chrome-devtools/images/inspect.png)
+
+Or through the Chrome menu:
+![Open Developer Tools through Chrome Menu](https://developers.google.com/web/tools/chrome-devtools/images/open-from-main.png)
+
+Need more help with Developer Tools? Check out these Google tutorials:
+
+- **[Developer Tools and HTML for Beginners](https://developers.google.com/web/tools/chrome-devtools/beginners/html)**
+- **[Developer Tools and CSS for Beginners](https://developers.google.com/web/tools/chrome-devtools/beginners/css)**
+
 ## Bootstrap 
-Open the `hack_day_2019/bootstrap` folder and open `index.html`. Type the following command into terminal:
-
-`$ cd ../boostrap`
-
-The `..` allows you to move up to the immediate parent directory of `bare_bones` (in this case, `hack_day_2019`). You can now execute commands from the `boostrap` directory. 
+Open the `hack_day_2019/bootstrap` folder and open `index.html`. 
 
 Your `index.html` is already set up with Bootstrap installed. 
 
