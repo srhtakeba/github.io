@@ -131,6 +131,93 @@ Once again, CSS will require a bit of in-person explanation. But here are resour
 - **[CSS Syntax Intro](https://www.w3schools.com/css/css_syntax.asp)**
 - **🌟[Cheat Sheet](https://www.toptal.com/css/css-cheat-sheet)🌟**
 
+Something important to know is CSS inheritance. Let's say we have the following HTML and CSS:
+
+```
+<style> 
+.parent {
+  color: red;
+}
+</style>
+<div class="parent">
+  Parent
+  <div class="child">Child</div>
+</div>
+```
+Which elements will have red text?
+
+Actually, the answer is: both! 
+
+![Parent child css example with two red colored divs](/../screenshots/screenshots/pc1.png)
+
+But if the code changes: 
+```
+<style> 
+.parent { 
+  color: red
+}
+.child {
+  color: green;
+}
+</style>
+<div class="parent">
+  Parent
+  <div class="child">Child</div>
+</div>
+```
+![Parent child css example with two different colored divs](/../screenshots/screenshots/pc2.png)
+
+The parent is red, but we have specified the color for the child, so now it is green. 
+
+There are certain CSS properties that child elements will inherit, like color. [Here is a list of them](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited). Be careful with inherited properties, as they can mess up the styling of your elements in ways that are hard to identify. 
+
+But let's say I set multiple colors for `.child`, using the simple `.child` selector and the `.parent .child` selector, which tells us to change the color of the the `.child` within a `.parent` element. Which one is chosen? 
+```
+<style> 
+.parent { 
+  color: red
+}
+.child {
+  color: green;
+}
+.parent .child {
+  color: blue;
+}
+</style>
+<div class="parent">
+  Parent
+  <div class="child">Child</div>
+</div>
+```
+![The most specific css is displayed](/../screenshots/screenshots/pc3.png)
+
+It's blue!
+
+In the end, **the css with the most specific selector** will be displayed. The `.child` class could be anywhere in the HTML. But `.parent .child` tells us a bit more—that `.child` will be found within the `.parent`. Therefore, it's more specific, and takes priority. 
+
+If all selectors are of equal specificity, the last css attribute in the document is chosen. 
+
+```
+<style> 
+.parent { 
+  color: red
+}
+.child {
+  color: green;
+}
+.child {
+  color: orange;
+}
+</style>
+<div class="parent">
+  Parent
+  <div class="child">Child</div>
+</div>
+```
+![The last css is displayed otherwise](/../screenshots/screenshots/pc4.png)
+
+`.child` and `.child` have equal specificity. But because `color: orange` comes last in the document, it's the color that shows up. 
+
 <a name="css-html"></a>
 ### CSS & HTML - Put it all together!
 Getting a bit lost putting it all together? Here's some example code!
@@ -241,6 +328,12 @@ But once you hit medium screens, a full screen menu could seem too large. So you
          
 <a name="flex"></a>
 ### Flex
+
+Though the grid is useful, it can be somewhat inflexible. That's what Flex was created to fix (haha). Flex is useful if you need your HTML elements to have more fluid sizing and more controllable alignment. 
+
+Flex can be a tough concept to grasp, which is it's best exemplified through demos. We'll be showing you some, but here are the official Bootstrap demonstrations if you miss us:
+
+- **[Flex Demos and Explanation](https://getbootstrap.com/docs/4.1/utilities/flex/)**
          
 <a name="font-awesome"></a>
 ## FontAwesome ##
