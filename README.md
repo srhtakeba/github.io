@@ -333,7 +333,7 @@ The grid system is super useful when developing responsive websites.
 
 Though the grid is useful, it can be somewhat inflexible. That's what Flex was created to fix (haha). Flex is useful if you need your HTML elements to have more fluid sizing and more controllable alignment. 
 
-Flex can be a tough concept to grasp, which is it's best exemplified through demos. We'll be showing you some, but here are the official Bootstrap demonstrations if you miss us:
+Flex can be a tough concept to grasp, which is why it's best exemplified through demos. We'll be showing you some, but here are the official Bootstrap demonstrations if you miss us:
 
 - **[Flex Demos and Explanation](https://getbootstrap.com/docs/4.1/utilities/flex/)**
          
