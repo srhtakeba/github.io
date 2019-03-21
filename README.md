@@ -378,7 +378,7 @@ And if you want to add only specific weights:
 
 Each font will have different weights, or sometimes, only one weight. Check which weights are available for your chosen font
 
-<a name="wrap-up></a>
+<a name="wrap-up"></a>
 ## Wrap-Up 
 Feel free to delete the starter files. Make sure your final `index.html` is at the root of your directory. 
 
