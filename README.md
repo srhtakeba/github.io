@@ -47,7 +47,20 @@ Git is a **version control** system. It, like our code editors, is open source. 
 
 [Create a github account.](https://github.com/join)
 
-Fork this repository using the link below the topbar:
+Open your terminal in your code editor:
+- Use the `` ⌃` `` keyboard shortcut with the backtick character.
+- Use the `View > Terminal` menu command on windows, and the `Terminal > New Terminal` menu command on Mac. 
+- From the Command Palette (`⇧⌘P`)
+
+Type the following into terminal to add a username to your Git. It can be your Github username, or just your name:
+
+`$ git config --global user.name "[GITHUB USERNAME]"`
+
+And also type the following into terminal to match your Git email to your Github email. **This email must match the one you associated with your Github account**:
+
+`$ git config --global user.email "email@example.com"`
+
+Return to the Github repository for Personal Website Hack Day. Fork this repository using the link below the topbar:
 ![How to fork a repository](https://help.github.com/assets/images/help/repository/fork_button.jpg)
 
 **Copy** your new repo's clone url:
@@ -55,11 +68,6 @@ Fork this repository using the link below the topbar:
 ![Clone button](https://help.github.com/assets/images/help/repository/clone-repo-clone-url-button.png)
 
 ![Url to clone](https://help.github.com/assets/images/help/repository/https-url-clone.png)
-
-Open your terminal in your code editor:
-- Use the `` ⌃` `` keyboard shortcut with the backtick character.
-- Use the `View > Terminal` menu command on windows, and the `Terminal > New Terminal` menu command on Mac. 
-- From the Command Palette (`⇧⌘P`)
 
 **Type** the following command into your terminal, **pasting** the git clone url you just copied:
 
