@@ -80,7 +80,7 @@ You should now have this repo on your machine!
 ## Bare Bones HTML 
 <a name="edit-html"></a>
 ### Edit some HTML
-In your editor, open the `hack_day_2019/bare_bones` folder. 
+In your editor, open the `hack_day_2020/bare_bones` folder. 
 
 You'll notice that there are two files in this folder: `index.html` and `style.css`
 
@@ -261,7 +261,7 @@ Need more help with Developer Tools? Check out these Google tutorials:
 
 <a name="bootstrap"></a>
 ## Bootstrap 
-Open the `hack_day_2019/bootstrap` folder and open `index.html`. 
+Open the `hack_day_2020/bootstrap` folder and open `index.html`. 
 
 Your `index.html` is already set up with Bootstrap installed. 
 
