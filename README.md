@@ -1,4 +1,4 @@
-# Personal Website Hack Day 2019! 🎉
+# Personal Website Hack Day 2020! 🎉
 
 Ever wanted to build your own website? With NUWIT, you'll learn how—and more!
 ## Table of Contents
