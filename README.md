@@ -42,7 +42,7 @@ Git is a **version control** system. It, like our code editors, is open source. 
 - **[For Windows](https://www.computerhope.com/issues/ch001927.htm)**
 - **[For Linux](https://git-scm.com/download/linux)**
 
-###IMPORTANT: If you have windows, installing git might be slightly more challenging. Read the instructions above carefully and make sure to ask for help if something doesn't work! 
+### IMPORTANT: If you have windows, installing git might be slightly more challenging. Read the instructions above carefully and make sure to ask for help if something doesn't work! 
 
 <a name="using-git"></a>
 ### Using Git and Github ###
