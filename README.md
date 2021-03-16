@@ -154,13 +154,11 @@ Something important to know is CSS inheritance. Let's say we have the following 
   <div class="child">Child</div>
 </div>
 ```
-Which elements will have red text?
-
-Actually, the answer is: both!
+In this example, both 'Parent' and 'Child will be red since the child div has inherited the color attribute set in the parent div!
 
 ![Parent child css example with two red colored divs](/../screenshots/screenshots/pc1.png)
 
-But if the code changes:
+But if we change the code to specify a color attribute for the child div:
 ```
 <style>
 .parent {
@@ -177,11 +175,11 @@ But if the code changes:
 ```
 ![Parent child css example with two different colored divs](/../screenshots/screenshots/pc2.png)
 
-The parent is red, but we have specified the color for the child, so now it is green.
+The parent is red, but the child is now green.
 
 There are certain CSS properties that child elements will inherit, like color. [Here is a list of them](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited). Be careful with inherited properties, as they can mess up the styling of your elements in ways that are hard to identify.
 
-But let's say I set multiple colors for `.child`, using the simple `.child` selector and the `.parent .child` selector, which tells us to change the color of the the `.child` within a `.parent` element. Which one is chosen?
+Another important thing to understand about CSS is **Specificity**. Specificity is used to determine which attributes should be used when multiple are being defined. For example:
 ```
 <style>
 .parent {
@@ -199,13 +197,31 @@ But let's say I set multiple colors for `.child`, using the simple `.child` sele
   <div class="child">Child</div>
 </div>
 ```
+the 'parent' class is set to red, the 'child' class is set to green, but a 'child' class inside a 'parent' class is set to blue. So which color will the child text be?
+
 ![The most specific css is displayed](/../screenshots/screenshots/pc3.png)
 
 It's blue!
 
-In the end, **the css with the most specific selector** will be displayed. The `.child` class could be anywhere in the HTML. But `.parent .child` tells us a bit more—that `.child` will be found within the `.parent`. Therefore, it's more specific, and takes priority.
+This is because of specificity rules, which can be shown in a helpful diagram:
 
-If all selectors are of equal specificity, the last css attribute in the document is chosen.
+```
+                              class,
+style                         pseudo-class,
+attribute         ID          attribute       element
++-------+      +-------+      +-------+      +-------+
+|       |      |       |      |       |      |       |  
+|       |      |       |      |       |      |       |  
+|       |      |       |      |       |      |       |  
++-------+ ,    +-------+ ,    +-------+ ,    +-------+  
+
+most specificity ----------------------> least specificity
+value                                    value
+```
+
+Essentially, every time a certain value is set you gain a specificity point and the css with the highest specificity value will be displayed. So for the above example, when .child is set to green, (0,0,1,0) points are applied. However, when .parent .child is set to blue, (0,0,2,0) points are applied since 2 classes have been specified. Therefore it has a higher specificity value and takes priority.
+
+If all selectors are of equal specificity, the last css attribute in the document is chosen. For example:
 
 ```
 <style>
@@ -225,8 +241,6 @@ If all selectors are of equal specificity, the last css attribute in the documen
 </div>
 ```
 ![The last css is displayed otherwise](/../screenshots/screenshots/pc4.png)
-
-`.child` and `.child` have equal specificity. But because `color: orange` comes last in the document, it's the color that shows up.
 
 <a name="css-html"></a>
 ### CSS & HTML - Put it all together!
