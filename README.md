@@ -113,13 +113,19 @@ Save these changes.
 <a name="commit-changes"></a>
 ### Commit Changes to Git and Github
 
+To see all the files you've changed, type:
+
+`$ git status`
+
 To stage your changes to be committed, type:
 
-`$ git add .`
+`$ git add .` OR
+`$ git add [file name]` if you only want to commit certain files
 
 Then type the following command to commit the changes to your **local repository**. Your local repository is the git repository that is tracking the changes on your laptop only. Your **remote repository** is your Github repository, the one that saves all your changes online.
 
-`$ git commit -m "Add my name"`
+`$ git commit -m "Add my name"` OR
+`$ git commit` if you set up VS Code with git
 
 The quotation following `-m` is the commit message, which gives a description of what changes were made in that commit.
 
