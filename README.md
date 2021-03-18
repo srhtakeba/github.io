@@ -37,6 +37,7 @@ There are lots of other code editors out there if you'd prefer something differe
 <a name="installing-git"></a>
 ### Installing Git
 Git is a **version control** system. It, like our code editors, is open source. Essentially, git allows us to make changes to code, revert code to a past version, and add features to code without necessarily having those features part of our final product.
+If you're unsure if you have git installed, type `$ git` into your terminal. If the response is a list of git commands, you already have git installed!
 
 - **[For Mac](http://git-scm.com/download/mac)**
 - **[For Windows](https://www.computerhope.com/issues/ch001927.htm)**
@@ -61,6 +62,10 @@ Type the following into terminal to add a username to your Git. It can be your G
 And also type the following into terminal to match your Git email to your Github email. **This email must match the one you associated with your Github account**:
 
 `$ git config --global user.email "email@example.com"`
+
+**Optional**: set up VS-Code with git
+- Open VS Code, go to Command Palette (Cmd-Shift-P), and click "Shell Command: Install 'code' command in PATH"
+- Type `$ git config --global core.editor=code --wait`
 
 Return to the Github repository for Personal Website Hack Day. Fork this repository using the link below the topbar:
   ![How to fork a repository](https://help.github.com/assets/images/help/repository/fork_button.jpg)
