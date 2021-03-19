@@ -33,6 +33,7 @@ Ever wanted to build your own website? With NUWIT, you'll learn how—and more!
 ### Code Editors
 Here is a great **open source** code editor that is compatible with Windows, Mac, and Linux:
 - **[Visual Studio Code](https://code.visualstudio.com/download)**: Microsoft's code editor with a super sleek user interface and terminal integration.  
+- **[Live Server Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)**: An extension that allows you to quickly see your changes to HTML/css files in the browser.
 
 There are lots of other code editors out there if you'd prefer something different, but this is the code editor we'll be using during our demos.
 <a name="installing-git"></a>
