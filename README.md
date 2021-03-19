@@ -191,7 +191,7 @@ The parent is red, but the child is now green.
 
 There are certain CSS properties that child elements will inherit, like color. [Here is a list of them](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited). Be careful with inherited properties, as they can mess up the styling of your elements in ways that are hard to identify.
 
-Another important thing to understand about CSS is **Specificity**. Specificity is used to determine which attributes should be used when multiple are being defined. For example:
+Another important thing to understand about CSS is **Specificity**. Specificity is used to determine which attributes should be used when multiple attributes are competing with one another. For example:
 ```
 <style>
 .parent {
@@ -254,6 +254,28 @@ If all selectors are of equal specificity, the last css attribute in the documen
 ```
 ![The last css is displayed otherwise](/../screenshots/screenshots/pc4.png)
 
+You can read more about CSS Specificity [here](https://css-tricks.com/specifics-on-css-specificity/)!
+
+<a name="responsive-break"></a>
+### Responsive Breakpoints
+**Breakpoints** are common device widths at which we should change our layout to optimize readability and usability. For example, while a set of links can span horizontally across a laptop screen, those links should stack vertically on a phone. Otherwise some text could get cut off.
+
+We can set a CSS media query to set attributes depending on the breakpoint/screen size. A media query looks like this:
+```
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+```
+In this example, it says to set the body background-color to light blue when the screen size is less than 600px. The 'only' keyword prevents older browsers that do not support media queries with media features from applying the specified styles. It has no effect on modern browsers.
+
+These are the typical screen sizes that breakpoints are set on:
+- 320px — 480px: Mobile devices.
+- 481px — 768px: iPads, Tablets.
+- 769px — 1024px: Small screens, laptops.
+- 1025px — 1200px: Desktops, large screens.
+
 <a name="css-html"></a>
 ### CSS & HTML - Put it all together!
 Getting a bit lost putting it all together? Here's some example code!
@@ -299,28 +321,6 @@ Trying to figure out Bootstrap? Here are some important pages in the documentati
 - **[Copy and Paste Components](https://getbootstrap.com/docs/4.1/components/)**
 - **[Bootstrap Demos](https://getbootstrap.com/docs/4.1/examples/)**
 <a name="advanced-bootstrap"></a>
-## Advanced Bootstrap Utilities
-<a name="responsive-break"></a>
-### Responsive Breakpoints
-**Breakpoints** are common device widths at which we should change our layout to optimize readability and usability. For example, while a set of links can span horizontally across a laptop screen, those links should stack vertically on a phone. Otherwise some text could get cut off.
-
-Here are Bootstrap's breakpoints.
-```
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// sm - Small devices (landscape phones, 576px and up)  
-@media (min-width: 576px) { ... }
-
-// md - Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// lg - Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// xl - Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-```
 
 You can set certain (but not all) Bootstrap utilities to activate at certain breakpoints. To do this, use the following syntax in your class names:
 
@@ -342,27 +342,47 @@ In this example, extra small screens will have left-aligned text, small screens 
 <a name="grid"></a>
 ### Grid
 
-The Bootstrap grid allows you to build website layouts using—you guessed it—a grid system. This grid system relies on rows and columns, nested within a div of the `container` css class.
+The Bootstrap grid allows you to build website layouts using a 12-column grid system. This grid system relies on rows and columns, nested within a div of the `container` css class.
 
 ![The grid system, which contains columns labeled with numbers](/../screenshots/screenshots/gridsystem.png)
 
-`col` is the column css class. Notice the numbers attached to `col`, like `col-4`? They're pretty important. That's the column width. It's not a width in pixels. Rather, it's the proportion of the parent element it's inside. How does that work?
+**Containers** are *required* in order to use the bootstrap 12-column grid system. Most of the time you will just need one container to wrap around your HTML.
 
-The absolute key to the grid system is this: **the column widths must add up to twelve**. If they're more than twelve, they probably won't work. If they're less than twelve, they probably won't work too. Twelve is the golden number in the Bootstrap grid system.
+A **row** is exactly what is says, it is a row that spans across the 12-column grid. This will make more sense when we go through an example.
 
-So how does this relate to proportions? Well, think of the column widths as a fraction over twelve. 6 is half of 12, so a column of `col-6` will take up half its parent container. `col-4` is a third of twelve, so it takes up a third of the parent container, and so on. No matter how big or small the parent container gets, `col-6` will always take up half of the container's width.
+A **column** is nested inside a row, and there are many ways to define and utilize them. Essentially, The width of the row is split up into 12-columns and you can define how many columns you want your HTML element to take up.
 
-Notice that some columns have breakpoints. Columns are one of those special utilities that you can set to activate at certain responsive breakpoints.
+Let's go through an example:
 
-For example, you could want a menu to take up the full width of a phone screen, otherwise it'd be too small to fit your text. So your menu is given `col-12` for extra small screens up to your next breakpoint, the default.
+```
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-8">
+    </div>
+  </div>
+</div>
+```
 
-![full screen menu](/../screenshots/screenshots/grid1.png)
+Notice the numbers attached to `col`, like `col-4` and `col-8`? Those are not widths in pixels, rather it is proportional to the parent element. `col-4` says, let this div take up 4 out of 12 of the columns (i.e 1/4th of the width), while `col-8` will have the element take up the remaining 8 columns (i.e 3/4 of the width).
 
-But once you hit medium screens, a full screen menu could seem too large. So you give your menu another class: `col-md-6`. Now, for medium-sized screens, your menu takes up only half the screen.
+The key to the grid system is this: **the column widths must add up to twelve**. If they're more than twelve, they probably won't work. If they're less than twelve, they probably won't work too. Twelve is the golden number in the Bootstrap grid system.
 
-![full screen menu](/../screenshots/screenshots/grid2.png)
+If you don't want to explicitly set the number of columns an element is taking up, you can also just use `col`, in which case the parent element will allocate equal width to the child columns. For example, this will set 3 equal-width containers inside the row:
 
-The grid system is super useful when developing responsive websites.
+```
+<div class="container">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div>
+```
 
 <a name="flex"></a>
 ### Flex
