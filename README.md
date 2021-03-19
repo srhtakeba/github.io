@@ -28,6 +28,7 @@ Ever wanted to build your own website? With NUWIT, you'll learn how—and more!
 <a name="wireframing"></a>
 ### Wireframing
 - **[Figma](https://www.figma.com/)**: A wireframing application that can help you plan out your website!
+- **[Wireframing 101 & Figma tutorial](https://docs.google.com/presentation/d/143D6zUYFjAOQWJH_0YTpAWVjqFztaRHC8jfzJZIEFqw/edit?usp=sharing)**
 <a name="code-editors"></a>
 ### Code Editors
 Here is a great **open source** code editor that is compatible with Windows, Mac, and Linux:
