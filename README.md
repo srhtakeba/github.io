@@ -16,9 +16,9 @@ Ever wanted to build your own website? With NUWIT, you'll learn how—and more!
   - [ CSS and HTML Together](#css-html)
   - [ Developer Tools](#developer-tools)
 - [ Bootstrap ](#bootstrap)
-- [ Advanced Bootstrap ](#advanced-bootstrap)
   - [Grid](#grid)
   - [Flex](#flex)
+  - [Components](#components)
 - [Google Fonts](#google-fonts)
 - [FontAwesome](#font-awesome)
 - [Wrap-Up](#wrap-up)
@@ -392,6 +392,12 @@ Though the grid is useful, it can be somewhat inflexible. That's what Flex was c
 Flex can be a tough concept to grasp, which is why it's best exemplified through demos. We'll be showing you some, but here are the official Bootstrap demonstrations if you miss us:
 
 - **[Flex Demos and Explanation](https://getbootstrap.com/docs/4.1/utilities/flex/)**
+
+
+<a name="components"></a>
+### Bootstrap Components
+
+One of the best parts of Bootstrap are the interactive components, which are pre-built web components that you can copy/paste/edit. This allows you to easily integrate cool features such as modals, dropdowns, carousels etc into your site! You can access all Bootstrap components [here](https://getbootstrap.com/docs/5.0/components/accordion/)!
 
 <a name="font-awesome"></a>
 ## FontAwesome ##
