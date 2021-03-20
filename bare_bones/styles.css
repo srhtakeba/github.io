@@ -1,0 +1,144 @@
+.rectangle {
+    /* Rectangle 1 */
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFBC97;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.logo {
+    position: absolute;
+    width: 52px;
+    height: 51px;
+    left: 19px;
+    top: 8px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #000000;
+}
+
+.about-me {
+    /* About me */
+    position: absolute;
+    width: 109px;
+    height: 26px;
+    left: 127px;
+    top: 26px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #000000;
+}
+
+.my-work {
+    /* My Work */
+    position: absolute;
+    width: 109px;
+    height: 26px;
+    left: 292px;
+    top: 26px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #000000;
+}
+
+.interests {
+    position: absolute;
+    width: 109px;
+    height: 26px;
+    left: 457px;
+    top: 26px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #000000;
+}
+
+.contact-me {
+    position: absolute;
+    width: 131px;
+    height: 28px;
+    left: 622px;
+    top: 26px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #000000;
+}
+
+.language {
+    position: absolute;
+    width: 102px;
+    height: 33px;
+    left: 1338px;
+    top: 24px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-text {
+    background-color: salmon;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image {
+    width:50%;
+}
+
+.main-h1 {
+    color: orange;
+    font-family: 'Syne Mono', monospace;
+}
+
+.description {
+    color:rebeccapurple;
+}
+
+@media (max-width: 480px) {
+    .main-image {
+        width:100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
